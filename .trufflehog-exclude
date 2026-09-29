@@ -1,0 +1,4 @@
+# Example URLs with user:password are fixtures, not credentials.
+(^|/)demo\.sh$
+(^|/)tests/test_url_parser\.sh$
+^\.git/

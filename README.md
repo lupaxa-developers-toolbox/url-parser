@@ -55,7 +55,7 @@ Add a scheme by adding one arm to `default_port_for_scheme` in `src/url-parser.s
 
 `git@host:path` has no scheme. It is treated as SSH: port `22`, and the path is everything after the first `:`. `ssh://git@host/path` is a normal URL, so the path keeps its leading `/`.
 
-Write an IPv6 host in brackets: `http://[::1]:8080/path` yields host `::1` and port `8080`. A zone id is written `%25`, so `http://[fe80::1%25eth0]/` yields host `fe80::1%eth0`.
+An IPv6 host is written in square brackets. Host `[::1]`, port `8080`, and path `/path` yield host `::1` and port `8080`. A zone id is written `%25`, so host `[fe80::1%25eth0]` yields `fe80::1%eth0`.
 
 User, password, host, path, query, and fragment are percent-decoded. `%20` becomes a space. A trailing incomplete sequence such as `%2`, and `%00`, are left as written.
 
