@@ -7,7 +7,7 @@
 # Bash URL splitter. Fills URL_* globals from one input string.                    #
 # -------------------------------------------------------------------------------- #
 
-URL_PARSER_VERSION="0.0.0"
+URL_PARSER_VERSION="0.1.0"
 
 URL=""
 URL_PROTOCOL=""
